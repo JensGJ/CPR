@@ -5,9 +5,9 @@ BeforeAll {
 }
 
 Describe "CPR Module Manifest" {
-  
+
   Context "Manifest Validation." {
-    
+
     It "Has a valid manifest." {
       { Test-ModuleManifest -Path $ModuleManifestPath -ErrorAction Stop -WarningAction SilentlyContinue } | Should -Not -Throw
     }
@@ -20,13 +20,17 @@ Describe "CPR Module Manifest" {
     It 'Has a valid author.' {
       $Manifest.Author | Should -Not -BeNullOrEmpty
     }
+    It 'Has a valid description.' {
+      $Manifest.description | Should -Not -BeNullOrEmpty
+    }
+
     It 'Has a valid guid.' {
       { [guid]::Parse($Manifest.Guid) } | Should -Not -Throw
     }
     It 'Has a valid copyright.' {
       $Manifest.Copyright | Should -Not -BeNullOrEmpty
     }
-    
+
   }
 
 }
