@@ -1,3 +1,37 @@
+<#
+.SYNOPSIS
+Generates a random CPR number.
+
+.DESCRIPTION
+This function generates a random CPR number based on the specified parameters such as age, gender, and validation rules.
+
+.PARAMETER age
+Specifies the age for the generated CPR number.
+
+.PARAMETER gender
+Specifies the gender for the generated CPR number.
+
+.PARAMETER useModuloValidation
+Ensures the generated CPR number passes modulo 11 validation.
+
+.PARAMETER omitHyphen
+Omits the hyphen in the generated CPR number.
+
+.EXAMPLE
+Get-CPR
+Generates a random CPR number.
+
+.EXAMPLE
+Get-CPR -age 25 -gender Male -useModuloValidation
+Generates a CPR number for a 25-year-old male that passes modulo 11 validation.
+
+.NOTES
+The function ensures the CPR number is valid and optionally formatted with or without a hyphen.
+
+.LINK
+Test-CPR
+Get-CPRInfo
+#>
 enum Gender {
     Male = 1
     Female = 0

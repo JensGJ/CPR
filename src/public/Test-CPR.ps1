@@ -1,3 +1,24 @@
+<#
+.SYNOPSIS
+Validates a CPR number.
+
+.DESCRIPTION
+This function checks if a CPR number is valid by verifying its structure, date, and modulo 11 checksum.
+
+.PARAMETER cpr
+The CPR number to be validated.
+
+.EXAMPLE
+Test-CPR -cpr "220197-1915"
+Validates the CPR number `220197-1915`.
+
+.NOTES
+Returns `True` if the CPR number is valid, otherwise `False`.
+
+.LINK
+Get-CPR
+Get-CPRInfo
+#>
 function Test-CPR {
 
     param (

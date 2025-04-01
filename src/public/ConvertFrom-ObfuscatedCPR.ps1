@@ -1,3 +1,23 @@
+<#
+.SYNOPSIS
+Converts an obfuscated CPR number back to its original form.
+
+.DESCRIPTION
+This function takes an obfuscated CPR number and reverses the obfuscation process to retrieve the original CPR number.
+
+.PARAMETER value
+The obfuscated CPR number to be converted back.
+
+.EXAMPLE
+ConvertFrom-ObfuscatedCPR -value "1234567890"
+Converts the obfuscated CPR number `1234567890` back to its original form.
+
+.NOTES
+Throws an error if the input is null, empty, or not a valid CPR number.
+
+.LINK
+ConvertTo-ObfuscatedCPR
+#>
 function ConvertFrom-ObfuscatedCPR {
   param (
       [Parameter(Mandatory=$true, ValueFromPipeline=$true)]

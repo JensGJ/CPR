@@ -1,3 +1,24 @@
+<#
+.SYNOPSIS
+Parses a CPR number and provides detailed information.
+
+.DESCRIPTION
+This function extracts information such as birthday, age, gender, and validity from a given CPR number.
+
+.PARAMETER cpr
+The CPR number to be parsed.
+
+.EXAMPLE
+Get-CPRInfo -cpr "220197-1915"
+Parses the CPR number `220197-1915` and returns detailed information.
+
+.NOTES
+The function validates the CPR number and calculates the age and gender based on its structure.
+
+.LINK
+Test-CPR
+Get-CPR
+#>
 function Get-CPRInfo {
     param (
         [Parameter(Mandatory=$true,ValueFromPipeline=$true)]

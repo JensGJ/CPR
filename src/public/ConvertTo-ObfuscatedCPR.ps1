@@ -1,3 +1,23 @@
+<#
+.SYNOPSIS
+Converts a CPR number into an obfuscated form.
+
+.DESCRIPTION
+This function obfuscates a CPR number by modifying its digits while maintaining its length and structure.
+
+.PARAMETER value
+The CPR number to be obfuscated.
+
+.EXAMPLE
+ConvertTo-ObfuscatedCPR -value "2201971915"
+Converts the CPR number `2201971915` into an obfuscated form.
+
+.NOTES
+Throws an error if the input is null, empty, or not a valid CPR number.
+
+.LINK
+ConvertFrom-ObfuscatedCPR
+#>
 function ConvertTo-ObfuscatedCPR {
   param (
     [Parameter(Mandatory=$true, ValueFromPipeline=$true)]
