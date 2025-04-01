@@ -31,5 +31,5 @@ Parses the CPR number `220197-1915` and returns details such as birthdate, age, 
 This function validates the CPR number and calculates the age and gender based on its structure.
 
 ## RELATED LINKS
-- [Test-CPR](Test-CPR.md)
-- [Get-CPR](Get-CPR.md)
+[Test-CPR](Test-CPR.md)
+[Get-CPR](Get-CPR.md)

@@ -77,5 +77,5 @@ Generates a CPR number without a hyphen.
 This function is intended for use in test environments and should not be used with real CPR numbers in production systems.
 
 ## RELATED LINKS
-- [Test-CPR](Test-CPR.md)
-- [Get-CPRInfo](Get-CPRInfo.md)
+[Test-CPR](Test-CPR.md)
+[Get-CPRInfo](Get-CPRInfo.md)

@@ -31,4 +31,4 @@ Converts the obfuscated CPR number `1234567890` back to its original form.
 Throws an error if the input is null, empty, or not a valid CPR number.
 
 ## RELATED LINKS
-- [ConvertTo-ObfuscatedCPR](ConvertTo-ObfuscatedCPR.md)
+[ConvertTo-ObfuscatedCPR](ConvertTo-ObfuscatedCPR.md)

@@ -37,5 +37,5 @@ Validates the CPR number `2201971915`.
 Returns `True` if the CPR number is valid, otherwise `False`.
 
 ## RELATED LINKS
-- [Get-CPR](Get-CPR.md)
-- [Get-CPRInfo](Get-CPRInfo.md)
+[Get-CPR](Get-CPR.md)
+[Get-CPRInfo](Get-CPRInfo.md)

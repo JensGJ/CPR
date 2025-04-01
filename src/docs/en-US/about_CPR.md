@@ -49,7 +49,7 @@ Converts the CPR number `2201971915` into an obfuscated form.
 This module is intended for use in test environments and should not be used with real CPR numbers in production systems.
 
 # SEE ALSO
-- [CPR Module README](../../README.md)
-- [Danish CPR Number Format](https://en.wikipedia.org/wiki/Personal_identification_number_(Denmark))
-- [PowerShell Gallery](https://www.powershellgallery.com/)
+[CPR Module README](../../README.md)
+[Danish CPR Number Format](https://en.wikipedia.org/wiki/Personal_identification_number_(Denmark))
+[PowerShell Gallery](https://www.powershellgallery.com/)
 
