@@ -1,3 +1,10 @@
+---
+external help file: ConvertTo-ObfuscatedCPR-help.xml
+Module Name: CPR
+online version: https://github.com/JensGJ/CPR/tree/main/src/docs/en-US/ConvertTo-ObfuscatedCPR.md
+schema: 2.0.0
+---
+
 # ConvertTo-ObfuscatedCPR
 
 ## SYNOPSIS

@@ -1,3 +1,10 @@
+---
+external help file: about_CPR-help.xml
+Module Name: CPR
+online version: https://github.com/JensGJ/CPR/tree/main/src/docs/en-US/about_CPR.md
+schema: 2.0.0
+---
+
 # CPR
 ## about_CPR
 

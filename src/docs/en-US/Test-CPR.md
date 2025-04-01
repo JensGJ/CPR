@@ -1,3 +1,10 @@
+---
+external help file: Test-CPR-help.xml
+Module Name: CPR
+online version: https://github.com/JensGJ/CPR/tree/main/src/docs/en-US/Test-CPR.md
+schema: 2.0.0
+---
+
 # Test-CPR
 
 ## SYNOPSIS
