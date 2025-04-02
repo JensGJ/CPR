@@ -32,18 +32,14 @@ The function ensures the CPR number is valid and optionally formatted with or wi
 Test-CPR
 Get-CPRInfo
 #>
-enum Gender {
-    Male = 1
-    Female = 0
-}
-
 function Get-CPR {
     param (
         [Parameter(Mandatory=$false)]
         [int]$age,
 
         [Parameter(Mandatory=$false)]
-        [Gender]$gender,
+        [ValidateSet("Male", "Female")]
+        [string]$gender,
 
         [switch]$useModuloValidation,
 
@@ -70,8 +66,8 @@ function Get-CPR {
     $datePart = $randomDate.ToString("ddMMyy")
 
 
-    if ($gender){
-        $parity = $gender.value__
+    if ($gender) {
+        $parity = if ($gender -eq "Male") { 1 } else { 0 }
     } else {
         $parity = Get-Random -Minimum 0 -Maximum 2
     }
